@@ -1,59 +1,156 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+h2, h3 {
+  color: #00698f;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* Container Styles */
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+
+.header {
+  background-color: #00698f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h2 {
+  margin-bottom: 0;
+}
+
+/* Content Styles */
+
+.content {
+  padding: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Separator Styles */
+
+.separator {
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Link Styles */
+
+.link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.link a {
+  display: block;
+  padding: 10px;
+  background-color: #337ab7;
+  color: #fff;
+  text-align: center;
+}
+
+.link a:hover {
+  background-color: #23527c;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
   }
-  
-  h2, h3 {
-    color: #00698f;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px auto;
   }
-  
-  h2 {
-    font-size: 24px;
+  .content img {
+    margin: 5px 0;
   }
-  
-  h3 {
-    font-size: 18px;
-  }
-  
-  div {
-    margin-bottom: 20px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-  
-  .separator {
-    margin: 20px 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #00698f;
-  }
-  
-  a:hover {
-    color: #003d5f;
-  }
-  
-  span {
-    font-size: 14px;
-  }
-  
-  b {
-    font-weight: bold;
-  }
-  
-  /* Center images and add some space around them */
-  .centered-image {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .centered-image img {
-    margin: 0 auto;
-  }
+}
+
+/* Advanced Styles */
+
+.content {
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.link a {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
