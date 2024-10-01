@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  h2, h3 {
+    color: #00698f;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  div {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .separator {
+    margin: 20px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #00698f;
+  }
+  
+  a:hover {
+    color: #003d5f;
+  }
+  
+  span {
+    font-size: 14px;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+  
+  /* Center images and add some space around them */
+  .centered-image {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .centered-image img {
+    margin: 0 auto;
+  }
